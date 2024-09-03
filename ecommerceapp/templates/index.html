@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+ <div class="container">
+  
+    <div class="row text-center d-flex justify-content-center mt-5">
+      <h3 class="text-center  badge bg-success">لاتفوت عروض الصيف</h3>
+
+      <div class="col-sm-3">
+        <a href="{% url 'perlistitems' %}">
+
+        <div class="card border border-dagnger">
+           
+            <div class="card-body ">
+              <i class="bi bi-person-heart" style="font-size: 60px; color:red;"></i>                
+                <h4> قسم العطور</h4>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="{% url 'listitems' %}">
+            <div class="card border border-dagnger">
+                <div class="card-body ">
+                    <i class="bi bi-person-arms-up text-danger"  style="font-size: 60px;"></i>
+                    <h4> قسم الملابس  </h4>
+                </div>
+            </div>       
+        </a>
+     
+      </div>
+    </div>
+    
+ </div>
+{% endblock content %}
